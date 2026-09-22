@@ -1,0 +1,810 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family:vw-text,Helvetica, sans-serif;
+  
+}
+.container{
+   max-width: 1400px;
+   width: 100%;
+   margin: 0 auto;
+  
+}
+
+main{
+    max-width: 1650px;
+    width: 100%;
+   
+}
+header{
+    position: absolute;
+    background-color: black;
+    padding-top: 15px;
+    width: 100%;
+    height: 50px;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+
+.menu-bar{
+    display: flex;
+    
+    flex-direction: row;
+    border: none;
+    color: white;
+    align-items: center;
+    gap: 11px;
+    background: none;
+    cursor: pointer;
+}
+
+
+.hamburger {
+    display: flex;
+    
+    flex-direction: column;
+    gap: 3px;
+    margin-left: 25px;
+}
+
+.hamburger span{
+    height:3px;
+    width: 20px;
+    background-color:white;
+}
+.menu-bar:hover .hamburger span { 
+    background-color: blue;
+}
+
+.menu-bar:hover  p{
+    color: blue;
+}
+
+
+/* hero section */ 
+
+
+.video-wrapper{
+    max-width: 1650px;
+    width: 100%;
+    margin-bottom:80px ;
+    
+}
+
+video{
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    
+}
+ 
+
+ /* Tayron  section */
+
+.tayron-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-left: -80px;
+    
+  
+ 
+}
+
+.tayron-image{
+    max-width: 600px;
+    min-width: 200px;
+    height: auto;
+   
+}
+
+.tayron-image img {
+    width: 100%;
+   
+   
+}
+
+.rght-content h4{
+    font-size: 14.72px;
+    font-weight: 400;
+}
+
+.right-content p {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 150%;
+} 
+
+/* section find ur volkswagon */
+.volkswagen-section{
+    padding-top:100px ;
+}
+
+.find-volkswagon-container{
+    text-align: center;
+}
+
+.filter-car{
+    padding-left: 130px;
+    margin-top: 50px;
+    
+}
+.filter-car .item{
+    
+    padding: 6px;
+    width: auto;
+    height: 32px;
+    padding:8px 12px;
+    border-radius: 8px;
+    border:1px solid rgb(194, 202, 207);;
+    background-color: rgb(255, 255, 255);;
+    cursor: pointer;
+   
+}
+.slider-wrapper{
+    max-width: 1540px;
+    overflow:hidden ;
+    position: relative;
+}
+
+.nxt-btn,.nxt-btn-2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(44, 40, 40);
+    position: absolute;
+    right: 30px;
+    top: 135px;
+    z-index: 1;
+}
+.prv-btn,.prv-btn-2{
+    display: none;
+}
+
+
+.prv-btn.active {
+    display: block;
+    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(44, 40, 40);
+    position: absolute;
+    left: 30px;
+    top: 135px;
+    z-index: 2;
+}
+
+.prv-btn-2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(44, 40, 40);
+    position: absolute;
+    left: 30px;
+    top: 135px;
+    z-index: 2;
+}
+
+
+
+
+.slider-1,.slider-2{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    transition: 1s ease;
+    gap: 10px;
+    padding:0 130px;
+
+
+}
+
+
+
+.cars{
+    width: 410.96px;
+    height: 484px;
+}
+
+.cars img{
+    height: 410px;
+    width: 410px;
+}
+
+.next-steps{
+    text-align: center;
+    margin-top: 60px;
+   
+}
+
+.next-step-container{
+    display: flex;
+    width: 100%;
+    
+    gap: 50px;
+    padding: 0 135px ;
+    text-align: start;
+}
+
+.steps{
+    width: 100%;
+    max-width: 383;
+    height: 350px;
+}
+
+.steps img{
+   height: auto;
+   width: 100%;
+}
+.disclaimer{
+    width: 100%;
+    margin-top: 1px;
+}
+.title{
+    text-align: center;
+    font-size: 25px;
+}
+
+.disclaimer .terms{
+    margin-top: 50px;
+    padding: 0 360px;
+}
+
+/* footer*/
+
+.section-footer{
+    display: flex;
+    margin: 100px;
+    padding: 40px;
+    width: 100%;
+    
+    border-bottom: 1px solid rgb(204, 196, 196) ;
+    border-top: 2px solid black;
+    
+    
+    
+   
+   
+}
+.footer-container{
+    width: 100%;
+  margin-left: 20px;
+}
+
+.details-container{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 170px;
+   
+    
+}
+
+.details{
+    width: 100%;
+    margin-top: 80px;
+}
+
+.details a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    line-height: 1.7;
+}
+
+.footer-links{
+    padding-top: 55px;
+    line-height: 1.5;
+    
+}
+.footer-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 6px;
+}
+
+.copy{
+    padding-top: 7px;
+
+    margin-top: 70px;
+    border-top: 1px solid rgb(204, 196, 196) ;
+    max-width: 335px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: normal;
+
+}
+
+
+/* testdrive div*/
+
+.testdrive-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px ;
+    border-top: 1px solid rgb(226, 226, 214);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 76px;
+    background-color: white;
+    
+   
+   
+}
+
+.icon{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 20px;
+    top: -38px;
+}
+
+.icon img{
+    width: 90px;
+    height: 90px;
+}
+
+.td-btn{
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+
+/* Large screens */
+@media (max-width:1400px){
+
+.container,
+main,
+.video-wrapper{
+    max-width:100%;
+}
+
+.tayron-container{
+    margin-left:0;
+    gap:50px;
+}
+
+.cars{
+    width:350px;
+}
+
+.cars img{
+    width:100%;
+    height:auto;
+}
+
+.slider-1,
+.slider-2{
+    padding:0 50px;
+}
+
+.next-step-container{
+    padding:0 50px;
+}
+
+.details-container{
+    gap:80px;
+}
+
+
+}
+
+
+/* Tablets */
+@media(max-width:1024px){
+
+
+header{
+    height:55px;
+}
+
+
+.video-wrapper{
+    margin-bottom:40px;
+}
+
+
+.tayron-container{
+    flex-direction:column;
+    align-items:center;
+    
+}
+
+
+.tayron-image{
+    max-width:90%;
+}
+
+
+.right-content{
+    width:90%;
+}
+
+
+.find-volkswagon-container h2{
+    font-size:32px !important;
+}
+
+
+.filter-car{
+    padding-left:20px;
+}
+
+
+.slider-wrapper{
+    width:100%;
+}
+.filter-car::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-1,
+.slider-2{
+    padding:0 20px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+}
+.slider-1::-webkit-scrollbar {
+    display: none;
+}
+.slider-2::-webkit-scrollbar {
+    display: none;
+}
+
+.prv-btn,.prv-btn-2{
+    display: none;
+}
+.nxt-btn,.nxt-btn-2{
+    display: none;
+}
+
+
+.cars{
+    min-width:300px;
+}
+
+
+.next-step-container{
+
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+
+.steps{
+    max-width:350px;
+}
+
+
+.disclaimer .terms{
+    padding:0 50px;
+}
+
+
+.section-footer{
+
+    margin:50px 0;
+    padding:30px;
+}
+
+
+.details-container{
+
+    flex-wrap:wrap;
+    gap:40px;
+
+}
+
+
+.details{
+
+    width:40%;
+}
+
+
+}
+
+
+
+/* Mobile screens */
+@media(max-width:748px){
+
+
+body{
+    overflow-x:hidden;
+}
+
+
+header{
+    height:50px;
+}
+
+
+.hamburger{
+    margin-left:15px;
+}
+
+
+/* hero */
+.video-wrapper{
+    aspect-ratio:9/16;
+}
+video{
+    height: 100%;
+   
+    object-fit:cover;
+
+}
+
+
+/* Tayron */
+
+.tayron-image{
+
+    max-width:100%;
+
+}
+
+
+.right-content p{
+
+    font-size:14px;
+
+}
+
+
+.right-content h4{
+
+    font-size:16px;
+
+}
+
+
+/* filter buttons */
+
+
+.filter-car{
+
+    padding-left:10px;
+    overflow-x:auto;
+    white-space:nowrap;
+
+}
+
+
+.filter-car .item{
+
+    display:inline-block;
+    margin-bottom:10px;
+
+}
+
+
+
+/* slider */
+
+
+ 
+
+.slider-1,
+.slider-2{
+
+    gap:20px;
+    padding:0 15px;
+
+}
+
+
+.cars{
+
+    min-width:280px;
+    height:auto;
+
+}
+
+
+.cars img{
+
+    width:280px;
+    height:auto;
+
+}
+
+
+
+/* buttons */
+
+
+.nxt-btn,
+.nxt-btn-2{
+
+    right:10px;
+    top:100px;
+
+}
+
+
+.prv-btn.active,
+.prv-btn-2{
+
+    left:10px;
+    top:100px;
+
+}
+
+
+
+/* next steps */
+
+
+.next-step-container{
+
+    padding:0 15px;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+
+.steps{
+
+    width:100%;
+}
+
+
+/* disclaimer */
+
+
+.disclaimer .terms{
+
+    padding:0 20px;
+
+}
+
+
+
+/* footer */
+
+
+.section-footer{
+
+    margin:40px 0 80px;
+    padding:20px;
+
+}
+
+
+.details-container{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+
+.details{
+
+    width:100%;
+    margin-top:20px;
+
+}
+
+
+.footer-links{
+
+    padding-top:30px;
+
+}
+
+
+.copy{
+
+    max-width:100%;
+}
+
+
+
+/* bottom test drive */
+
+
+.testdrive-div{
+
+    height:65px;
+
+}
+
+
+.icon{
+
+    height:70px;
+    width:70px;
+    top:-25px;
+
+}
+
+
+.icon img{
+
+    width:65px;
+    height:65px;
+
+}
+
+
+}
+
+
+
+/* Very small phones */
+
+@media(max-width:380px){
+
+
+.cars{
+
+    min-width:250px;
+
+}
+
+
+.cars img{
+
+    width:250px;
+
+}
+
+
+.find-volkswagon-container h2{
+
+    font-size:26px !important;
+
+}
+
+
+.right-content p{
+
+    font-size:13px;
+
+}
+
+
+}
+
+
+
+
+/* .slide{
+  display:none;
+}
+
+.slide.active{
+  display:block;
+  transform: translate();
+} */
