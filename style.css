@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     
+    
 }
 
 body{
@@ -132,7 +133,7 @@ video{
 }
 
 .filter-car{
-    padding-left: 130px;
+    padding-left: 106px;
     margin-top: 50px;
     
 }
@@ -149,12 +150,18 @@ video{
    
 }
 .slider-wrapper{
-    max-width: 1540px;
+   
     overflow:hidden ;
     position: relative;
 }
+.slider-wrapper .item-nos {
+    
+ padding-left: 106px;
+    padding-bottom: 14px;
+}
 
-.nxt-btn,.nxt-btn-2 {
+
+.nxt-btn {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -165,7 +172,21 @@ video{
     background-color: rgb(44, 40, 40);
     position: absolute;
     right: 30px;
-    top: 135px;
+    top: 180px;
+    z-index: 1;
+}
+.nxt-btn-2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(44, 40, 40);
+    position: absolute;
+    right: 30px;
+    top: 215px;
     z-index: 1;
 }
 .prv-btn,.prv-btn-2{
@@ -186,7 +207,7 @@ video{
     background-color: rgb(44, 40, 40);
     position: absolute;
     left: 30px;
-    top: 135px;
+    top: 180px;
     z-index: 2;
 }
 
@@ -201,7 +222,7 @@ video{
     background-color: rgb(44, 40, 40);
     position: absolute;
     left: 30px;
-    top: 135px;
+    top: 215px;
     z-index: 2;
 }
 
@@ -214,7 +235,8 @@ video{
     width: 100%;
     transition: 1s ease;
     gap: 10px;
-    padding:0 130px;
+    padding:0 106px;
+  
 
 
 }
@@ -229,6 +251,11 @@ video{
 .cars img{
     height: 410px;
     width: 410px;
+    cursor: pointer;
+}
+.cars img:hover{
+    transform: scale(1.05);
+    transition: 0.4s ease;
 }
 
 .next-steps{
@@ -256,28 +283,36 @@ video{
    height: auto;
    width: 100%;
 }
-.disclaimer{
+.disclaimer .title{
+    text-align: center;
     width: 100%;
     margin-top: 1px;
 }
-.title{
-    text-align: center;
-    font-size: 25px;
+#title{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
-
+.disclaimer .title {
+    font-size: 22px;
+}
 .disclaimer .terms{
     margin-top: 50px;
-    padding: 0 360px;
+    padding: 0 220px;
+}
+.disclaimer a{
+    font-weight: 600;
+    font-size: 17px;
+    color: black;
 }
 
 /* footer*/
 
 .section-footer{
-    display: flex;
-    margin: 100px;
+   display: flex;
+    margin: 100px 0;
     padding: 40px;
     width: 100%;
-    
     border-bottom: 1px solid rgb(204, 196, 196) ;
     border-top: 2px solid black;
     
@@ -369,7 +404,12 @@ video{
     height: 90px;
 }
 
-.td-btn{
+.td-btn,.td-btn a{
+    text-decoration: none;
+    background-color: rgb(44, 40, 40);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
     margin-left: auto;
     margin-top: 10px;
 }
